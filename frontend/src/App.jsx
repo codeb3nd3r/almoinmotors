@@ -19,7 +19,13 @@ const App = () => {
       try {
         const response = await axios.get("http://localhost:5000/almoin/logindata");
         let emailFound = response.data.some(e => Email === e.email);
-        setIsLoggedIn(emailFound);
+        if (emailFound) {
+          setIsLoggedIn(true);
+          alert("logging in.......")
+        } else {
+          setIsLoggedIn(false);
+          alert("User not found")
+        }
       } catch (error) {
         console.log(error);
         setIsLoggedIn(false);
@@ -35,7 +41,7 @@ const App = () => {
   
 
   return (
-    <div>{isLoggedIn ? <Layout /> : <Login onLoginData={callback} />}</div>
+    <div>{isLoggedIn ? <Layout /> : <Login callback={callback} />}</div>
   );
 };
 export default App;
