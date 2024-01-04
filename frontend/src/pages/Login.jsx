@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/signuppage.css'; // Importing the CSS file
 import axios from 'axios';
 
-const Login = ({ onLoginData }) => {
+const Login = ({ callback}) => {
   const [form, setForm] = useState({ email: '', password: '' });
 
   const handleSubmit = async (e) => {
@@ -21,7 +21,7 @@ const Login = ({ onLoginData }) => {
       await axios.post("http://localhost:5000/almoin/login", {
         ...form
       });
-      onLoginData(form);
+      ()=>callback(form)
       setForm({ email: '', password: '' }); // Clear the form
       alert("Signup successful!");
     } catch (error) {
