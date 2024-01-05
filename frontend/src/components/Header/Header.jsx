@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState ,useNavigate} from "react";
 
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
-import almoinmotors from "../../assets/all-images/logo/almoin.png"
+import Login from "../../pages/Login";
+import almoinmotors from "../../assets/all-images/logo/almoin.png";
 import "../../styles/header.css";
 
 const navLinks = [
@@ -26,7 +27,6 @@ const navLinks = [
 
 const Header = () => {
   const menuRef = useRef(null);
-
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
 
   return (
@@ -43,9 +43,12 @@ const Header = () => {
 
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <Link to="/login" className=" d-flex align-items-center gap-1">
-                  <i class="ri-login-circle-line"></i> Logout
-                </Link>
+                <button
+                  onClick=""
+                  className="d-flex align-items-center gap-1"
+                >
+                  <i className="ri-login-circle-line"></i> Logout
+                </button>
               </div>
             </Col>
           </Row>
@@ -76,7 +79,6 @@ const Header = () => {
                 ))}
               </div>
             </div>
-
           </div>
         </Container>
       </div>

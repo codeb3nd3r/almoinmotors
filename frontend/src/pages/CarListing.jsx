@@ -21,8 +21,7 @@ const CarListing = () => {
 
                 <select>
                   <option>Select</option>
-                  <option value="low">Low to High</option>
-                  <option value="high">High to Low</option>
+                  <option value="coming soon">Coming Soon</option>
                 </select>
               </div>
             </Col>

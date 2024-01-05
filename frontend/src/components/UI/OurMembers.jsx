@@ -14,7 +14,6 @@ const OUR__MEMBERS = [
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava01,
   },
 
   {
@@ -24,7 +23,6 @@ const OUR__MEMBERS = [
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava02,
   },
 
   {
@@ -34,7 +32,6 @@ const OUR__MEMBERS = [
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava03,
   },
 
   {
@@ -44,7 +41,6 @@ const OUR__MEMBERS = [
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava01,
   },
 ];
 

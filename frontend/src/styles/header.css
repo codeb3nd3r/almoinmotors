@@ -210,3 +210,25 @@
     display: block;
   }
 }
+.header__top__right button {
+  background-color: #000d6b; /* Navy blue background color */
+  color: white; /* White text */
+  padding: 5px 10px; /* Padding around the text */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Slightly rounded corners */
+  font-size: 16px; /* Increase the font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  display: flex;
+  align-items: center; /* Center the icon with the text */
+  gap: 5px; /* Add some space between the icon and text */
+}
+
+.header__top__right button:hover {
+  background-color: #0000cd; /* A slightly lighter blue on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.header__top__right button i {
+  font-size: 20px; /* Make the icon slightly larger */
+}
