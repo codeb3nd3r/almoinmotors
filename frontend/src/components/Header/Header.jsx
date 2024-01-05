@@ -2,7 +2,6 @@ import React, { useRef, useState ,useNavigate} from "react";
 
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
-import Login from "../../pages/Login";
 import almoinmotors from "../../assets/all-images/logo/almoin.png";
 import "../../styles/header.css";
 
@@ -43,12 +42,12 @@ const Header = () => {
 
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <button
-                  onClick=""
+                <Link
+                  to="/login"
                   className="d-flex align-items-center gap-1"
                 >
                   <i className="ri-login-circle-line"></i> Logout
-                </button>
+                </Link>
               </div>
             </Col>
           </Row>

@@ -9,7 +9,6 @@ import Contact from "../pages/Contact";
 import Signup from "../pages/Signups";
 import Login from "../pages/Login";
 
-
 const Routers = () => {
   return (
     <Routes>
@@ -21,7 +20,7 @@ const Routers = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/signup" element={<Signup />}/>
-      <Route path="/login" element={<Login />}/>
+      <Route path="/login" element={<Login/>}/>
     </Routes>
   );
 };
