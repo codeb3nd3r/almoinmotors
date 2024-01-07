@@ -27,7 +27,8 @@ const App = () => {
     const validation = async () => {
       try {
         const response = await axios.get("http://localhost:5000/almoin/logindata");
-        let emailFound = response.data.some(e => Email === e.email);
+        let emailFound = response.data.some(e => Email === e.email && password===e.password);
+        console.log(emailFound); 
         if (emailFound) {
           setIsLoggedIn(true);
           alert("logging in.......")
