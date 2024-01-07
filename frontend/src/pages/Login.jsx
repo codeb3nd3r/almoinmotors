@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/signuppage.css'; // Importing the CSS file
 
-const Login = ({ callback}) => {
+const Login = ({ callback,onSignupClick}) => {
   const [form, setForm] = useState({ email: '', password: '' });
 
   const handleSubmit = async (e) => {
@@ -45,6 +45,8 @@ const Login = ({ callback}) => {
           onChange={handleChange}
         />
         <button type="submit">login</button>
+        <br /><br />
+        <button onClick={onSignupClick}>Sign Up</button>
       </form>
     </div>
   );

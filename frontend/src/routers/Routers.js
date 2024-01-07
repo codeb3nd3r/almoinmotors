@@ -6,7 +6,6 @@ import CarListing from "../pages/CarListing";
 import CarDetails from "../pages/CarDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
-import Signup from "../pages/Signups";
 import Login from "../pages/Login";
 
 const Routers = () => {
@@ -19,7 +18,6 @@ const Routers = () => {
       <Route path="/cars/:slug" element={<CarDetails />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/signup" element={<Signup />}/>
       <Route path="/login" element={<Login/>}/>
     </Routes>
   );

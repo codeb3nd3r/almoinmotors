@@ -2,9 +2,11 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Layout from "./components/Layout/Layout";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(null);
+  const [isSigningUp, setIsSigningUp] = useState(null);
   const [Email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   const callback =(data)=> {
@@ -14,6 +16,13 @@ const App = () => {
     setPassword(password)
     }
   };
+  const callback2=(bolean)=>{
+    if (bolean===true) {
+      setIsLoggedIn(true);
+  }else{
+    setIsLoggedIn(false);
+    }
+  }
   useEffect(() => {
     const validation = async () => {
       try {
@@ -38,10 +47,18 @@ const App = () => {
     }
   }, [Email]);
   
-  
+  const handleSignupClick = () => {
+    setIsSigningUp(true);
+  };
 
-  return (
-    <div>{isLoggedIn ? <Layout /> : <Login callback={callback} />}</div>
-  );
+  if (isLoggedIn) {
+    return <Layout />;
+  } else {
+    if (isSigningUp) {
+      return <Signup callback={callback2} />;
+    } else {
+      return <Login callback={callback} onSignupClick={handleSignupClick} />;
+    }
+  }
 };
 export default App;
