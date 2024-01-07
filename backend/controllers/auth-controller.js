@@ -1,7 +1,7 @@
 import authmodel from "../models/auth-model.js";
-import * as bcrypt from "bcrypt";
+// import * as bcrypt from "bcrypt";
 
-const saltrrounds = 10;
+// const saltrrounds = 10;
 
 const registration = async (req, res) => {
     const { fname, lname, email, password } = req.body;
@@ -15,15 +15,15 @@ const registration = async (req, res) => {
         }
         
         // If the email does not exist, hash the password
-        const hashpassword = await bcrypt.hash(password, saltrrounds);
-        console.log({ email, password: hashpassword });
+        // const hashpassword = await bcrypt.hash(password, saltrrounds);
+        console.log({ fname,lname,email, password});
         
         // Create the user in the database
         await authmodel.create({
             fname,
             lname,
             email,
-            password: hashpassword
+            password,
         });
         
         // Send success response
