@@ -11,9 +11,9 @@ import img08 from "../all-images/cars-img/mercedes-offer.png";
 const carData = [
   {
     id: 1,
-    brand: "Tesla",
+    brand: "Nissan",
     rating: 112,
-    carName: "Tesla Malibu",
+    carName: "Nissan Ultima",
     imgUrl: img01,
     model: "Model 3",
     price: 50,
@@ -29,7 +29,7 @@ const carData = [
     id: 2,
     brand: "Toyota",
     rating: 102,
-    carName: "Toyota Aventador",
+    carName: "Toyota CAMRY",
     imgUrl: img02,
     model: "Model-2022",
     price: 50,
@@ -61,7 +61,7 @@ const carData = [
     id: 4,
     brand: "Nissan",
     rating: 102,
-    carName: "Nissan Mercielago",
+    carName: "Nissan Ultima",
     imgUrl: img04,
     model: "Model-2022",
     price: 70,
@@ -75,9 +75,9 @@ const carData = [
 
   {
     id: 5,
-    brand: "Ferrari",
+    brand: "Toyota",
     rating: 94,
-    carName: "Ferrari Camry",
+    carName: "TOYOTA Camry",
     imgUrl: img05,
     model: "Model-2022",
     price: 45,
@@ -93,7 +93,7 @@ const carData = [
     id: 6,
     brand: "Mercedes",
     rating: 119,
-    carName: "Mercedes Benz XC90",
+    carName: "Mercedes Benz C63",
     imgUrl: img06,
     model: "Model-2022",
     price: 85,
@@ -107,9 +107,9 @@ const carData = [
 
   {
     id: 7,
-    brand: "Audi",
+    brand: "Toyota",
     rating: 82,
-    carName: "Audi Fiesta",
+    carName: "Toyota Camary",
     imgUrl: img07,
     model: "Model 3",
     price: 50,
@@ -123,9 +123,9 @@ const carData = [
 
   {
     id: 8,
-    brand: "Colorado",
+    brand: "Mercedes",
     rating: 52,
-    carName: "Rolls Royce Colorado",
+    carName: "Mercedes-Benz AMG C63",
     imgUrl: img08,
     model: "Model 3",
     price: 50,

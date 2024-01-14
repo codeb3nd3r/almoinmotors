@@ -47,6 +47,13 @@
   height: 35px;
   width: 100px;
   outline: none;
+  opacity: 0.6;
+}
+.reserve__btn:hover{
+  background:#000d6b !important;
+  color: #fff !important;
+  height: 38px;
+  width: 110px
 }
 
 .reserve__btn a {
@@ -55,10 +62,6 @@
   color: #000d6b;
 }
 
-.reserve__btn:hover {
-  background: #000d6b;
-  color: #fff;
-}
 
 @media only screen and (max-width: 992px) {
   .slider__item {
